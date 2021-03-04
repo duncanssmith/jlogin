@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Image #{imagePath}
+
+  h1 Jade - node template engine
+  #container
+    - if (youAreUsingJade)
+      You are amazing
+    - else
+      Get Get on it
+
+   .image-block
+     h3 Esperanza Spalding
+     img.className#IdName(src="#{imagePath}")
+
+     img.className#IdName(src="/images/esperanza_spalding.jpg", width="200px", height="200px")
+     img.className#IdName0(src="public/images/esperanza_spalding.jpg")
+     img.className#IdName1(src="/public/images/esperanza_spalding.jpg")
+     img.className#IdName2(src="../public/images/esperanza_spalding.jpg")
+     img.className#IdName3(src="../../public/images/esperanza_spalding.jpg")
+     img.className#IdName3(src="/../../public/images/esperanza_spalding.jpg")
+ 

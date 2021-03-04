@@ -1,0 +1,59 @@
+extends structure
+
+block sidebar
+  //- include _nav2
+
+block main
+  h3 Journalist Login 
+  p Some text here 
+  form.form-login(action="login_check", method="post") 
+    .card
+      .card-body
+        label(for="email") Email
+        input(type="email", name="")
+    .card
+      .card-body
+        label(for="passwqord") Password
+        input(type="password", name="")
+    .card
+      .card-body
+        input(type="submit", name="Login")
+        input(type="submit", name="Cancel")
+
+block images
+  img(src="images/img_main.jpg" width="200px")
+
+//- 
+
+//- <form action="/login_check" method="post" class="form-login" role="form" autocomplete="off">
+                                <input type="hidden" name="_csrf_token" value="kRykI2EReohhOwPJdnd6SjAKeYbECQbQyMU2ZAj1odo">
+
+                                
+                                <div>
+                                    <label for="username" class="sr-only">Username</label>
+                                    <div class="input-group no-border input-lg">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="username" name="_username" placeholder="Username">
+                                    </div>
+
+                                    <label for="password" class="sr-only">Password</label>
+                                    <div class="input-group no-border input-lg">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" id="password" name="_password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <input type="hidden" name="_failure_path" value="/login">
+                                    <button type="submit" class="btn btn-warning btn-round btn-lg btn-block">Login</button>
+                                </div>
+                                <div class="text-right">
+                                    <h6>
+                                        <a href="/forgot-password" class="link footer-link">
+                                            Forgot password                                        </a>
+                                    </h6>
+                                </div>
+                            </form>

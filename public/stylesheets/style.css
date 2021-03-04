@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav-main {
+  background:#41CDA0;
+}
+.nav-main a {
+  color: rgb(255,255,255,1);
+  font-size: 1.1em;
+}
+.nav-main > span {
+  color: rgb(255,255,255,1);
+  font-size: 1.1em;
+}
+.nav-secondary {
+  background: #f0eedf;
+}
+.nav-secondary > ul > li {
+  color: rgb(40,40,40,.8);
+  background: #efedde;
+}
+.nav-secondary > ul > li > a {
+  color: rgb(25,95,55,.9);
+  font-size: 1.1em;
+}
+
+/* .card .card-body .nav-main a { */
+  /* color: rgb(255,255,255,1); */
+/* } */
+
+/* .card .card-body .nav-main a { */
+  /* color: rgb(255,255,255,1); */
+  /* font-size: 1.2em; */
+/* } */
+
+.jumbo{
+  background: #efedde;
+  color: rgb(55, 75, 55, 1);
+}
+
+#footer {
+  background:#EEE;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.footer {
+  background:#EEE;
+}
