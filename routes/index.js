@@ -6,9 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('0000_login', { title: 'Telum: Login ' });
 });
 
-/* GET connect page. */
-router.get('/Connect', function(req, res, next) {
-  res.render('0001_connect', { title: 'Telum: Connect' });
+/* GET dashboard page. */
+router.get('/Dashboard', function(req, res, next) {
+  res.render('0001_dashboard', { title: 'Telum: Dashboard' });
 });
 
 /* GET organisation page. */

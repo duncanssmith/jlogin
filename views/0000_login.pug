@@ -1,9 +1,9 @@
 extends structure
 
-block sidebar
+block lsidebar
   //- include _nav2
 
-block main
+block lmain
   h3 Journalist Login 
   p Some text here 
   form.form-login(action="login_check", method="post") 
@@ -20,10 +20,8 @@ block main
         input(type="submit", name="Login")
         input(type="submit", name="Cancel")
 
-block images
-  img(src="images/img_main.jpg" width="200px")
-
-//- 
+block rsidebar
+  //- img(src="images/img_main.jpg" width="200px")
 
 //- <form action="/login_check" method="post" class="form-login" role="form" autocomplete="off">
                                 <input type="hidden" name="_csrf_token" value="kRykI2EReohhOwPJdnd6SjAKeYbECQbQyMU2ZAj1odo">
