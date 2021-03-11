@@ -11,7 +11,7 @@ a {
 
 .nav-main {
   /* background:#41CDA0; */
-  background: rgba(20, 40, 45, .9);
+  background: rgba(20, 40, 45, .999);
 }
 .nav-main a {
   color: rgba(255,255,255,1);
