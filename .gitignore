@@ -1,0 +1,5 @@
+.idea/*
+*.xcf
+node_modules/*
+public/images/senh/*
+public/stylesheets/bootstrap.min.css
