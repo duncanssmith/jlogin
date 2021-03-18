@@ -1,0 +1,60 @@
+mixin renderNewsContainer(item)
+  if item.w === '1' && item.h === '1'
+    .grid-item
+      +renderNewsItem(item)
+  else if item.w === '2' && item.h === '1'
+    .grid-item.grid-item--width2
+      +renderNewsItem(item)
+  else if item.w === '2' && item.h === '2'
+    .grid-item.grid-item--width2.grid-item--height2
+      +renderNewsItem(item)
+  else if item.w === '1' && item.h === '2'
+    .grid-item.grid-item--height2
+      +renderNewsItem(item)
+  else
+    .grid-item
+      +renderNewsItem(item)
+
+mixin renderNewsItem(item)
+  .card
+    .card-body
+      img.img.rounded(width="100%" src=item.image)
+      h6.category.text-primary= item.strap
+      h5.card-title= item.title
+      p.card-description= item.body
+    .card-footer
+      .author
+        img(src="item.profile").avatar.img-raised
+        span= item.author
+
+h1 Masonry - layout
+p Click to toggle item size, or re-size window
+
+p Open Console to view
+  code &nbsp;console.log
+
+//.card= news.news[0].title
+
+.grid
+  each item, i in news.news ? news.news : ['No news']
+    +renderNewsContainer(item)
+
+//.grid
+  .grid-item.grid-item--width3.grid-item--height2
+    include news/0
+  .grid-item.grid-item-width2
+    include news/2
+  .grid-item.grid-item--height2
+    include news/4
+  //.grid-item.grid-item--width2.grid-item--height2
+    include news/6
+  //.grid-item.grid-item--height2
+    include news/8
+  //.grid-item.grid-item--width3.grid-item--height2
+    include news/1
+  //.grid-item.grid-item--height2
+    include news/3
+  //.grid-item.grid-item--width2.grid-item--height2
+    include news/5
+  //.grid-item.grid-item--height2
+    include news/7

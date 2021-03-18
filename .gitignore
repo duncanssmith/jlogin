@@ -2,4 +2,5 @@
 *.xcf
 node_modules/*
 public/images/senh/*
-public/stylesheets/bootstrap.min.css
+public/stylesheets/bootstrap.*
+public/stylesheets/now-ui-kit.*

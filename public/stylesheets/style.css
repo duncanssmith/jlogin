@@ -1,6 +1,8 @@
 body {
-  background-color: rgba(100,100,100,0.2);
-  color:rgba(20, 40, 45, .9);
+  background-color: rgba(255,255,255,0.9);
+  /*background-color: #999;*/
+          /*rgba(0,0,0,0.2);*/
+  /*color:rgba(20, 40, 45, .9);*/
   padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -10,8 +12,8 @@ a {
 }
 
 .nav-main {
-  /* background:#41CDA0; */
-  background: rgba(20, 40, 45, .999);
+   background-color:#41CDA0;
+  /*background: rgba(20, 40, 45, .999);*/
 }
 .nav-main a {
   color: rgba(255,255,255,1);
@@ -47,33 +49,92 @@ a {
   color: white;
 }
 
+.card .card-body .nav-main a {
+  color: rgba(255,255,255,1);
+  border-radius: 15px;
+}
+
+.card .card-body .nav-main a {
+  color: rgba(255,255,255,1);
+  font-size: 1.1em;
+}
+
+/* ---- grid ---- */
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: hsla(40, 100%, 50%, .5);
+  border: 1px solid #999;
+  border-color: hsla(35, 100%, 50%, 0.5);
+  border-radius: 15px;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+.grid-item--gigante {
+  width: 320px;
+  height: 360px;
+  background: #F90;
+  z-index: 2; /* abover other items */
+}
+
+.grid-item:hover {
+  background: hsla(120, 50%, 90%, .9);
+  border-color: white;
+  cursor: pointer;
+}
+
+.jumbo {
+  margin-top: 100px;
+  padding: 30px;
+}
+
 .jobs-header {
-  padding: 10px 20px;
-  margin: 20px 40px;
-  background: rgba(80, 10, 80, .7);
+  background: hsla(360, 40%, 90%, .9);
   color: white;
 }
 
 .news-header {
-  padding: 10px 20px;
-  margin: 20px 40px;
-  background: rgba(240, 60, 0, .7);
+  background: hsla(60, 50%, 60%, .7);
   color: white;
 }
 
-.card .card-body .nav-main a {
-  color: rgba(255,255,255,1);
+.jumbo-news-clip-text {
+  font-family: "URW Palladio L";
+  font-size: 95px;
+  background-image: url("../images/morocco.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color-transparent;
 }
 
-.card .card-body .nav-main a {
-  color: rgba(255,255,255,1);
-  font-size: 1.2em;
-}
-
-.jumbo{
-  margin-top: 50px;
-  background: #efedde;
-  color: rgba(55, 175, 55, .8);
+.jumbo-jobs-clip-text {
+  font-family: "Abyssinica SIL";
+  font-size: 95px;
+  background-image: url("../images/morocco.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color-transparent;
 }
 
 #footer {

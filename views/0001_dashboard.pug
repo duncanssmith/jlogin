@@ -1,15 +1,35 @@
-extends structure
+extends layout
 
-block lsidebar
+block tlsidebar
+  .section
+    include _search
 
-block lmain
+block tlmain
   .section.section-news
     include _news1
 
-block rmain
+  //block trmain
+    .section.section-jobs
+    //include _jobs1
+
+  //block trsidebar
+    .section.section-media-request
+      include _media_request
+
+block blsidebar
+
+block blmain
   .section.section-jobs
     include _jobs1
+  //include _news1
 
-  //block rsidebar
+block brmain
   .section.section-media-request
     include _media_request
+
+  //.section.section-jobs
+    include _jobs1
+
+block brsidebar
+  .section.section-media-request
+    //include _media_request
