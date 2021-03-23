@@ -1,14 +1,26 @@
-h3.title News search
 .row
     .col
-        .card
+        .card.card-no-shadow.card-search-ds
             .card-title
-                h6.text-muted Search news archive
-                i.icon.icon-warning.fab.bi-file-earmark-arrow-down-fill
+              h5 &nbsp; Search &nbsp;
+                i.fa.fa-search.text-warning
             .card-body
-                form
-                    .input-group
-                        textarea.default.text-muted.pull-center enter keywords here
-                    .submit
-            .card-footer
-                .a.btn.btn-default.btn-outline.pull-right(href="") Search
+              .row
+                .col
+                  form
+                    .input-group.fit-width
+                      input.text-muted.pull-center.fit-width(placeholder="search news" width="20px")
+                      i.fa.fa-search.badge.badge-warning.badge-circle.submit.pull-right &nbsp;search
+
+        .card.card-no-shadow.card-search-ds
+            .card-title
+              h5 &nbsp; Subscribe &nbsp;
+                i.fa.fa-sign-in.text-success
+            .card-body
+              .row
+                .col
+                  form
+                    .input-group.fit-width
+                      input.text-muted.pull-center.fit-width(placeholder="your email" width="20px")
+                      i.fa.fa-sign-in.badge.badge-warning.badge-circle.submit.pull-right &nbsp;subscribe
+

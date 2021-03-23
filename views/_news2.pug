@@ -1,0 +1,24 @@
+.row.center-column-ds
+    .col
+        .card.card-no-shadow
+            h4.card-title.text-muted Today's edition
+              span.text-info &nbsp; #{printDate}
+            .row
+                .col-8
+                    include news/0
+                .col-4
+                    include news/7
+                    hr
+                    include news/6
+            hr
+            .row
+                .col-4
+                    include news/3
+                    hr
+                    include news/8
+                .col-8
+                    include news/1
+            hr
+.row
+    .col
+        .a.btn.btn-default.btn-outline.pull-right(href="") More news

@@ -1,38 +1,22 @@
 extends layout
 
-block tlsidebar
-  .section
-      include _search
-
+block lside
   //.section
-      include _search_jobs
+  include _search
+  hr
+  include _widgets
 
-block tlmain
-  .section.section-news
-    include _news1
+block lmain
+  //.section.section-news
+  include _news2
 
-  //block trmain
-    .section.section-jobs
-    //include _jobs1
-
-  //block trsidebar
-    .section.section-media-request
-      include _media_request
-
-block blsidebar
-
-block blmain
-  .section.section-jobs
-    include _jobs1
-  //include _news1
-
-block brmain
-  .section.section-media-request
-    include _media_request
-
+block rmain
   //.section.section-jobs
-    include _jobs1
+  include _jobs2
+  hr
+  include _media_request
 
-block brsidebar
-  .section.section-media-request
-    //include _media_request
+  //block rside
+  //.section.section-media-request
+    include _widgets
+

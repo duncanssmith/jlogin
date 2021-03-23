@@ -11,11 +11,50 @@ let newsJson = '{ "news": [ ' +
 let newsHC = JSON.parse(newsJson);
 
 //------------------------------------------------
-let path = '/home/duncan/Telum/developers-vm/www.telummedia.com/jlogin1/';
-let fs = require('fs');
-let data = fs.readFileSync(path+'news.json', 'utf8');
-let newsDyn = JSON.parse(data);
-console.log(newsDyn);
+let path = '/home/duncan/Telum/developers-vm/www.telummedia.com/jlogin1/'
+let fs = require('fs')
+let newsData = fs.readFileSync(path+'news.json', 'utf8')
+let newsDyn = JSON.parse(newsData)
+let jobsData = fs.readFileSync(path+'jobs.json', 'utf8')
+let jobsDyn = JSON.parse(jobsData)
+console.log(newsDyn, jobsDyn)
+
+let today = new Date()
+let cDay = today.getDate()
+let cMonth = today.getMonth() + 1
+let cYear = today.getFullYear()
+
+    var weekday = new Array()
+    weekday[0] = "Sunday"
+    weekday[1] = "Monday"
+    weekday[2] = "Tuesday"
+    weekday[3] = "Wednesday"
+    weekday[4] = "Thursday"
+    weekday[5] = "Friday"
+    weekday[6] = "Saturday"
+
+    var month = new Array(12)
+    month[0] = "January"
+    month[1] = "February"
+    month[2] = "March"
+    month[3] = "April"
+    month[4] = "May"
+    month[5] = "June"
+    month[6] = "July"
+    month[7] = "August"
+    month[8] = "September"
+    month[9] = "October"
+    month[10] = "November"
+    month[11] = "December"
+
+    var w = weekday[today.getUTCDay()]
+    var M = month[today.getUTCMonth()]
+    var D = today.getDate()
+
+    let printDate = (w + ' ' + D + ' ' + M + ' ' + cYear)
+
+    console.log(printDate)
+
 //--------------------------------------------------
 
 
@@ -26,7 +65,7 @@ router.get('/', function(req, res, next) {
 
 /* GET dashboard page. */
 router.get('/Dashboard', function(req, res, next) {
-  res.render('0001_dashboard', { title: 'Telum: Dashboard', news: newsDyn });
+  res.render('0001_dashboard', { title: 'Telum: Dashboard', news: newsDyn, jobs: jobsDyn, printDate: printDate });
 });
 
 /* GET organisation page. */

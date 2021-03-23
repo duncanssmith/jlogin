@@ -1,7 +1,6 @@
 { "news": [
   {
-    "w": "2",
-    "h": "1",
+    "size": {"w": "1", "h": "1"},
     "file": "news/1",
     "image": "images/vaccine1.jpg",
     "strap": "International News",
@@ -11,8 +10,7 @@
     "author": "Michael Olivera"
   },
   {
-    "w": "2",
-    "h": "1",
+    "size": {"w": "1", "h": "1"},
     "file": "news/2",
     "image": "images/news1.png",
     "strap": "Events/Awards",
@@ -22,8 +20,7 @@
     "author": ""
   },
   {
-    "w": "1",
-    "h": "2",
+    "size": {"w": "1", "h": "1"},
     "file": "news/3",
     "image": "images/news5.png",
     "strap": "Interview",
@@ -33,14 +30,73 @@
     "author": ""
   },
   {
-    "w": "1",
-    "h": "2",
+    "size": {"w": "1", "h": "1"},
     "file": "news/4",
-    "image": "images/news3.jpg",
+    "image": "images/news2.jpg",
     "strap": "Events/Awards",
     "title": "Event wrap-up - Telum Talks To... The Star",
     "body" : "Telum recently hosted the latest edition of the Telum Talks To series, this time with Malaysias largest English publication, The Star.",
     "profile": "",
     "author": ""
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "news/4",
+    "image": "images/news4.jpg",
+    "strap": "Feature",
+    "title": "Event wrap-up: Telum Talks To... Dow Jones Newswires",
+    "body" : "At the latest #TelumTalksTo event, Dow Jones Newswires’ Asia Chief Editor Jacques van Wersch chatted to PR professionals about its Singapore news hub, the integrated newsroom shared with The Wall Street Journal, its audience and what the team is looking out for.",
+    "profile": "",
+    "author": ""
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "news/5",
+    "image": "images/news3.jpg",
+    "strap": "Events/Awards",
+    "title": "Event wrap-up: Telum Talks To... The Star",
+    "body" : "Telum recently hosted the latest edition of the Telum Talks To series, this time with Malaysia’s largest English publication, The Star.",
+    "profile": "",
+    "author": ""
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "news/6",
+    "image": "",
+    "strap": "Moves",
+    "title": "Editor appointed at Sound Telegraph and Mandurah Coastal Times",
+    "body" : "",
+    "profile": "images/olivia.jpg",
+    "author": "Lord Alex"
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "news/7",
+    "image": "",
+    "strap": "Moves",
+    "title": "New Political Editor at The Advertiser",
+    "body" : "",
+    "profile": "images/julie.jpg",
+    "author": "Susan B. Anthony"
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "news/8",
+    "image": "",
+    "strap": "Moves",
+    "title": "Dames Alexander Sinaga joins Xinhua News Agency",
+    "body" : "",
+    "profile": "images/julie.jpg",
+    "author": "Dames Alexander Sinaga"
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "news/9",
+    "image": "",
+    "strap": "International News",
+    "title": "News in-depth: Fukushima nuclear accident ",
+    "body" : "Fukushima nuclear disaster haunts Japan’s climate change debate",
+    "profile": "images/james.jpg",
+    "author": "Dames Alexander Sinaga"
   }
 ]}

@@ -1,0 +1,50 @@
+{ "news": [
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "jobs/1",
+    "image": "images/jobs0.jpg",
+    "strap": "Brand Editor",
+    "title": "Offshore Recruitment",
+    "body" : "Fantastic opportunity for an experienced Editor",
+    "posted_date": "30/12/2020",
+    "closing_date": "09/04/2021",
+    "profile": "images/Mike.jpg",
+    "author": "Michael Olivera"
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "jobs/2",
+    "image": "images/jobs1.png",
+    "strap": "Part time Asia reported ",
+    "title": "Managing IP; Euromoney",
+    "body" : "",
+    "posted_date": "03/01/2021",
+    "closing_date": "19/05/2021",
+    "profile": "",
+    "author": ""
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "jobs/3",
+    "image": "images/jobs2.png",
+    "strap": "Beauty Editor and Journalist",
+    "title": "The Intermedia Group Pty Ltd (Intermedia)",
+    "body" : "",
+    "posted_date": "22/02/2021",
+    "closing_date": "13/04/2021",
+    "profile": "",
+    "author": ""
+  },
+  {
+    "size": {"w": "1", "h": "1"},
+    "file": "jobs/4",
+    "image": "images/jobs3.jpg",
+    "strap": "Senior Journalist",
+    "title": "Swan Hill Guardian",
+    "body" : "",
+    "posted_date": "12/03/2021",
+    "closing_date": "15/06/2021",
+    "profile": "",
+    "author": ""
+  }
+]}
