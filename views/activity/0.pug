@@ -1,0 +1,83 @@
+.card.card-no-shadow
+    .card-title
+        .row
+            .col
+                h6 &nbsp; Activity
+            .col
+                i.fa.fa-times.pull-right
+                h6.small.pull-right Close
+    hr
+    .card-body
+        .row
+            .col
+                .row
+                    form
+                        label.small(for="activitySubject") Subject
+                        br
+                    .col
+                        input.text.small(id="activitySubject", placeholder="Subject")
+        .row
+            .col-6
+                .row
+                    .col
+                        label.small(for="activityDate") Date
+                    .col
+                        input.text(id="activityDate", placeholder="01/04/2021")
+            .col-6
+                .row
+                    .col
+                        label.small(for="activityTime") Time
+                    .col
+                        input.text(id="activityTime", placeholder="14:35")
+        br
+        .row
+            .col-6
+                .row
+                    .col
+                        label.small(for="activityType") Activity type
+                    .col
+                        input.text(id="activityType", placeholder="Type")
+            .col-6
+                .row
+                    .col
+                        label.small(for="activityStatus") Status
+                    .col
+                        input.text(id="activityStatus", placeholder="Status")
+        br
+        .row
+            .col
+                label.small(for="activityDescription") Description
+            .col
+                textarea(id="activityDescription", placeholder="", width="100%")
+        br
+        .row
+            .col
+                label.small(for="activityBackground") Background, or further request information
+            .col
+                textarea(id="activityBackground", placeholder="e.g. Looking for information regarding lifestyle events, restaurants, nightlife and hotel reviews. Please contact at...")
+        br
+        .row
+            .col
+                input(type="checkbox", id="prefMail")
+                label.small(for="prefEmail") &nbsp;Email me
+            .col
+                p.small If checked, you will be reminded a day before specified date based on your timezone
+        br
+        .row
+            .col
+                input(type="checkbox", id="prefAppointment")
+                label.small(for="prefAppointment") &nbsp;Download calendar appointment
+            .col
+        br
+        .row
+            .col-4
+                input(type="checkbox", id="prefAll")
+            .col-8
+                label.small(for="prefAll") &nbsp;Email all assignees
+            p.small If checked, all PRs assigned to this activity will be reminded a day before the specified date
+    .card-footer
+        hr
+        .row
+            .col
+                a.btn.btn-success(href="") Create
+

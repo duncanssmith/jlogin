@@ -5,25 +5,25 @@
       a.navbar-brand(href="#" rel="tooltip" title="Telum Journalist Login" data-placement="bottom")
         img(src="images/logo-telum-orange.png")
       button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation")
-        span("navbar-toggler-bar top-bar")
-        span("navbar-toggler-bar middle-bar")
-        span class="navbar-toggler-bar bottom-bar")
-    .collapse.navbar-collapse(data-nav-image="images/blurred-image-1.jpg" data-color="orange")
+        span.navbar-toggler-bar.top-bar
+        span.navbar-toggler-bar.middle-bar
+        span.navbar-toggler-bar.bottom-bar
+    .collapse.navbar-collapse(data-nav-image="images/blurred-image-1.jpg" data-color="#444;")
       ul.navbar-nav.mx-auto
         li.nav-item.dropdown
-          a(href="#" class="nav-link" id="navbarDropdownMenuLink1")
+          a(href="/Dashboard" class="nav-link" id="navbarDropdownMenuLink1")
             p News
         li.nav-item.dropdown
-          a(href="#" class="nav-link" id="navbarDropdownMenuLink2")
+          a(href="/Jobs" class="nav-link" id="navbarDropdownMenuLink2")
             p Jobs
         li.nav-item.dropdown
-          a(href="#" class="nav-link" id="navbarDropdownMenuLink3")
+          a(href="/MediaRequests" class="nav-link" id="navbarDropdownMenuLink3")
             p Media Requests
         li.nav-item.dropdown
-          a(href="#" class="nav-link" id="navbarDropdownMenuLink4")
+          a(href="/Dashboard#" class="nav-link" id="navbarDropdownMenuLink4")
             p Contact
         li.nav-item.dropdown
-          a(href="#" class="nav-link" id="navbarDropdownMenuLink5")
+          a(href="/About" class="nav-link" id="navbarDropdownMenuLink5")
             p About us
 
       ul.nav.navbar-nav.navbar-right

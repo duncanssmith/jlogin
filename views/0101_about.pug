@@ -1,16 +1,20 @@
-extends structure
+extends layout
 
-block lsidebar
-  //- include _nav1
+block lside
+  //include _nav1
 
 block lmain
-  h3 About
-  p Telum is a 
-  blockquote After completing
+  include _news2
 
-block rmain 
-  h6 Rounders
-  p Bootstrap and softballs
+block rmain
+  // h6 Rounders
+  include _jobs2
+  //hr
+  include _widgets1.pug
 
-block rsidebar
+block bmain
+
+  include _media_request2
+
+  //block rside
   //- img(src="images/torso_x-ray.jpg" width="100px")

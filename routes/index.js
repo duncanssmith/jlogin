@@ -57,7 +57,6 @@ let cYear = today.getFullYear()
 
 //--------------------------------------------------
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('0000_login', { title: 'Telum: Login ' });
@@ -65,17 +64,18 @@ router.get('/', function(req, res, next) {
 
 /* GET dashboard page. */
 router.get('/Dashboard', function(req, res, next) {
-  res.render('0001_dashboard', { title: 'Telum: Dashboard', news: newsDyn, jobs: jobsDyn, printDate: printDate });
+  res.render('0001_dashboard', { title: 'Telum: Dashboard',
+      news: newsDyn, jobs: jobsDyn, printDate: printDate, structure: 0});
 });
 
 /* GET organisation page. */
-router.get('/Organisation', function(req, res, next) {
-  res.render('0010_organisation', { title: 'Telum: Organisation' });
+router.get('/Jobs', function(req, res, next) {
+  res.render('0010_jobs', { title: 'Telum: Jobs' , news: newsDyn, jobs: jobsDyn, printDate: printDate, structure: 2});
 });
 
 /* GET overview page. */
-router.get('/Consultation', function(req, res, next) {
-  res.render('0011_consultation', { title: 'Telum: Consultation' });
+router.get('/MediaRequests', function(req, res, next) {
+  res.render('0011_consultation', { title: 'Telum: Media Requests' , news: newsDyn, jobs: jobsDyn, printDate: printDate, structure: 3});
 });
 
 /* GET overview page. */
@@ -85,7 +85,7 @@ router.get('/Packages', function(req, res, next) {
 
 /* GET consultation page. */
 router.get('/About', function(req, res, next) {
-  res.render('0101_about', { title: 'Telum: About' });
+  res.render('0101_about', { title: 'Telum: About', news: newsDyn, jobs: jobsDyn, printDate: printDate, structure: 1});
 });
 
 /* GET consultation page. */

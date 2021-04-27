@@ -1,0 +1,94 @@
+.row
+  .col
+    .card.card-no-shadow
+      .card-title
+        h3 &nbsp; Submit media request
+      .card-body
+        .row
+          .col-4
+            .row
+              form
+              .col
+                label Name
+              .col
+                input.name(placeholder="Name")
+          .col-4
+            .row
+              .col
+                label Job title
+              .col
+                input.email(placeholder="Job title")
+          .col-4
+            .row
+              .col
+                label Media
+              .col
+                input.email(placeholder="Media")
+    .card.card-no-shadow
+      .card-body
+        .row
+          .col-4
+            .row
+              .col
+                label Country / Location
+              .col
+                input.email(placeholder="Country/Location")
+          .col-4
+            .row
+              .col
+                label Work email
+              .col
+                input.email(placeholder="Work email")
+          .col-4
+            .row
+              .col
+                label Phone
+              .col
+                input.email(placeholder="Phone")
+    .card.card-no-shadow
+      .card-body
+        .row
+          .col-8
+            .row
+              .col
+                  label Subject / Focus
+              .col
+                  textarea(placeholder="e.g. Lifestyle, restaurants, nightlife, hotels, luxury")
+          .col-4
+            .row
+              .col
+                label Deadline
+              .col
+                input.email(placeholder="dd/MMM/yyyy")
+    .card.card-no-shadow
+      .card-body
+        .row
+          .col-8
+            .row
+              .col
+                label Background, or further request information
+              .col
+                textarea(placeholder="e.g. Looking for information regarding lifestyle events, restaurants, nightlife and hotel reviews. Please contact at...")
+          .col-4 &nbsp;
+            .row
+              .col
+                label Preferred method of contact
+              .col
+                .row
+                  .col
+                    input(type="radio" name="pref" id="Email" value="Email")
+                  .col
+                    label(for="Email") Email&nbsp;
+                .row
+                  .col
+                    input(type="radio" name="pref" id="Phone" value="Phone")
+                  .col
+                    label(for="Phone") &nbsp;Phone
+
+    .card.card-no-shadow
+      .card-body
+        .row
+          .col &nbsp;
+          .col &nbsp;
+          .col
+.btn.btn-default.btn-circle.btn-sm.pull-right Submit
